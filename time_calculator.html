@@ -32,27 +32,27 @@
 
             function fn_changed(timeStr){
 
-                const ex1 = addHours(timeStr.value, 2);
+                // const ex1 = addHours(timeStr.value, 2);
                 const sn1 = addHours(timeStr.value, 2.5);   //+2.5
 
-                const ex2 = addHours(timeStr.value, 4);
+                // const ex2 = addHours(timeStr.value, 4);
                 const lnc = addHours(timeStr.value, 4.5);   //+2
                 
-                const ex3 = addHours(timeStr.value, 6.5);
+                // const ex3 = addHours(timeStr.value, 6.5);
                 const sn2 = addHours(timeStr.value, 7);     //+2.5
                 
-                const ex4 = addHours(timeStr.value, 8.5);
+                // const ex4 = addHours(timeStr.value, 8.5);
                 const din = addHours(timeStr.value, 9);     //+2
              
                 const slp = addHours(timeStr.value, 11.5);  //+2.5
 
-                document.getElementById("ex1").innerHTML = ex1;
+                // document.getElementById("ex1").innerHTML = ex1;
                 document.getElementById("sn1").innerHTML = sn1;
-                document.getElementById("ex2").innerHTML = ex2;
+                // document.getElementById("ex2").innerHTML = ex2;
                 document.getElementById("lnc").innerHTML = lnc;
-                document.getElementById("ex3").innerHTML = ex3;
+                // document.getElementById("ex3").innerHTML = ex3;
                 document.getElementById("sn2").innerHTML = sn2;
-                document.getElementById("ex4").innerHTML = ex4;
+                // document.getElementById("ex4").innerHTML = ex4;
                 document.getElementById("din").innerHTML = din;
                 document.getElementById("slp").innerHTML = slp;
 
@@ -85,28 +85,33 @@
     <body>
 
     <div class="m-3">
-        Breakfast: <input type="time" id="time" onchange="fn_changed(this)">
+        *Levothyroxin (30 min earlier)<br>
+        Breakfast + *Choline: <input type="time" id="time" onchange="fn_changed(this)">
     </div>
 
     <div class="grid m-4">
-        <div>Ex #1</div>
-        <div id="ex1"></div>
+        <!-- <div>Ex #1</div> -->
+        <!-- <div id="ex1"></div> -->
         <div style="font-weight: bold;">Snack #1</div>
         <div style="font-weight: bold;" id="sn1"></div>
-        <div>Ex #2</div>
-        <div id="ex2"></div>
-        <div style="font-weight: bold;">Lunch</div>
+        <!-- <div>Ex #2</div> -->
+        <!-- <div id="ex2"></div> -->
+        <div style="font-weight: bold;">Lunch <span style="font-weight: normal;">+ *Postnatal, *Omega3</span></div>
         <div style="font-weight: bold;" id="lnc"></div>
-        <div>Ex #3</div>
-        <div id="ex3"></div>
+        <!-- <div>Ex #3</div> -->
+        <!-- <div id="ex3"></div> -->
         <div style="font-weight: bold;">Snack #2</div>
         <div style="font-weight: bold;" id="sn2"></div>
-        <div>Ex #4</div>
-        <div id="ex4"></div>
+        <!-- <div>Ex #4</div> -->
+        <!-- <div id="ex4"></div> -->
         <div style="font-weight: bold;">Dinner</div>
         <div style="font-weight: bold;" id="din"></div>
+        <div>*Probiotic</div>
+        <div></div>
         <div style="font-weight: bold;">Sleep</div>
         <div style="font-weight: bold;" id="slp"></div>
+        <div style="font-weight: bold;">Night Snack <span style="font-weight: normal;">+ *Feramax</span></div>
+        <div></div>
     </div>
 
 
